@@ -4,16 +4,20 @@ body {
 }
 
 .my-container {
-    padding: 112px 80px 98px 80px;
+    position: relative;
+    max-width: 1440px;
+    margin: 112px auto 98px;
+    padding: 0 20px;
 }
 
 .row {
     background: #fff;
-    /* margin: 112px 80px 98px 80px; */
     border-radius: 30px;
-    padding: 37px 0px 0px 74px;
+    padding: 37px 74px 0px 74px;
     position: relative;
     overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .btn {
@@ -24,7 +28,7 @@ body {
 }
 
 .me-auto {
-    margin-left: 320px;
+    margin-left: 18%;
 }
 
 .fa-wind {
@@ -36,12 +40,12 @@ body {
     color: #215EE9 !important;
 }
 
-.nav-item {
-    padding-right: 40px;
+.nav-item:not(:last-child) {
+    padding-right: 30px;
 }
 
 .headings {
-    padding-top: 180px;
+    padding-top: 97px;
 }
 
 .title1, .heading1 {
@@ -56,7 +60,7 @@ body {
 
 .heading1 {
     font-weight: bold;
-    font-size: 65px;
+    font-size: 50px;
     line-height: 101.8%;
     letter-spacing: -0.01em;
     margin-bottom: 30px;
@@ -64,8 +68,8 @@ body {
 
 .title2 {
     font-weight: normal;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 15px;
+    line-height: 25px;
     opacity: 0.7;
     margin-bottom: 60px;
     width: 82%;
@@ -77,7 +81,6 @@ body {
 
 .mycustom {
     position: relative;
-    width: 80%;
     margin-bottom: 119px;
 }
 
@@ -106,6 +109,8 @@ body {
     justify-content: space-between;
     padding-left: 0px;
     margin-bottom: 76px;
+    z-index: 1;
+    position: relative;
 }
 
 .data1 h1, .data3 h1, .data p {
@@ -113,7 +118,7 @@ body {
 }
 
 .data h1 {
-    font-size: 56px;
+    font-size: 50px;
     font-weight: bold;
 }
 
@@ -122,6 +127,10 @@ body {
     z-index: 2;
     position: relative;
     filter: drop-shadow(35px 10px 100px rgba(0, 0, 0, 0.3));
+    position: absolute;
+    width: 760px;
+    right: 0;
+    bottom: 0;
 }
 
 .man-image .btn-light {
@@ -145,7 +154,7 @@ body {
 .time-table {
     position: absolute;
     bottom: 275px;
-    left: 735px;
+    left: 600px;
     z-index: 3;
 }
 
@@ -189,7 +198,7 @@ body {
 
 .testimonial {
     position: absolute;
-    left: 735px;
+    left: 600px;
     bottom: 0px;
     z-index: 3;
 }
@@ -245,22 +254,22 @@ body {
 
 #shape1 {
     top: 140px;
-    right: 90px;
+    right: 15px;
 }
 
 #shape2 {
     bottom: 0px;
-    right: 86px;
+    right: 0px;
 }
 
 #debit-card {
-    bottom: 320px;
-    right: 30px;
+    bottom: 225px;
+    right: -50px;
 }
 
 #activity {
-    bottom: 70px;
-    right: 55px;
+    bottom: -25px;
+    right: -25px;
 }
 
 #debit-card, #activity {
@@ -276,7 +285,7 @@ body {
     border-radius: 40px;
     color: #215EE9;
     top: 110px;
-    right: 220px;
+    right: 150px;
     z-index: 2;
 }
 
@@ -287,26 +296,205 @@ body {
     padding: 15px 17px;
     border-radius: 40px;
     top: 200px;
-    right: 100px;
+    right: 30px;
 }
 
 #circle-shape {
-    top: 290px;
-    left: 680px;
+    top: 220px;
+    left: 570px;
 }
 
 #image1 {
     top: 120px;
-    right: 730px;
+    right: 570px;
 }
 
 #image2 {
     top: 315px;
-    left: 790px;
+    left: 730px;
 }
 
 #image3 {
     top: 400px;
-    right: 700px;
+    right: 530px;
     z-index: 2;
+}
+
+@media (max-width:1400px) {
+    .time-table, .testimonial {
+        left: 550px;
+    }
+}
+
+
+@media (max-width:1200px) {
+    .time-table, .testimonial {
+        left: 435px;
+    }
+
+    .testimonial1, .testimonial2 {
+        width: 300px;
+    }
+
+    .testimonial1 .details, .testimonial2 .details {
+        margin-left: 10px;
+    }
+
+    #debit-card {
+        bottom: 345px;
+    }
+
+    .heading1 {
+        font-size: 45px;
+    }
+
+    .data ul li h1 {
+        font-size: 40px;
+    }
+
+    .data ul li p {
+        font-size: 12px;
+    }
+
+    .row {
+        padding: 37px 30px 0px 30px;
+    }
+
+    #activity {
+        right: -40px;
+    }
+
+    .time-table {
+        bottom: 255px;
+    }
+}
+
+@media (max-width:991px) {
+    .row {
+        padding: 37px 30px 0px 30px;
+    }
+
+    .me-auto {
+        margin-left: 15%;
+    }
+    
+    .nav-item:not(:last-child) {
+        padding-right: 5px;
+    }
+
+    .navbar {
+        order: -1;
+    }
+
+    .man-image {
+        order: -1;
+    }
+
+    .man {
+        position: relative;
+    }
+
+    #shape2 {
+        top: 210px;
+    }
+
+    #debit-card {
+        top: 435px;
+    }
+
+    #activity {
+        bottom: 750px;
+    }
+
+    .time-table {
+        top: 610px;
+        left: 40px;
+    }
+
+    .testimonial {
+        left: 40px;
+        top: 690px;
+    }
+
+    #image1, #image2 {
+        left: 100px;
+    }
+
+    #image3 {
+        left: 150px;
+    }
+}
+
+@media (max-width:768px) {
+    #debit-card, #activity {
+        display: none;
+    }
+
+}
+
+@media (max-width:425px) {
+    .headings {
+        margin-top: 420px;
+    }
+
+    .data ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .man {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .time-table button {
+        display: block;
+        margin: 15px 0px;
+    }
+
+    .time-table {
+        top: 500px
+    }
+
+    .heading1 {
+        font-size: 30px;
+    }
+
+    .title2 {
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .mycustom {
+        margin-bottom: 100px;
+    }
+
+    .mycustom .input-group-prepend .btn-primary {
+        margin-top: 70px;
+        margin-right: 50px;
+    }
+
+    .fa-calendar-check {
+        right: 55px;
+    }
+
+    #circle-shape {
+        top: 280px;
+        left: 10px;
+    }
+
+    #image1 {
+        top: 80px;
+        left: 10px;
+    }
+
+    #image2 {
+        top: 220px;
+        left: 30px;
+    }
+
+    #image3 {
+        left: 200px;
+    }
 }
